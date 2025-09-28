@@ -1,53 +1,103 @@
-
+/* Reset */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0c0f14;
-  color: #f0f0f0;
+  background: #ffffff;   /* White background */
+  color: #000000;        /* Black text for readability */
+  line-height: 1.6;
 }
+
+/* Header */
 header {
   padding: 20px;
   text-align: center;
-  background: #12161d;
+  background: #1e90ff;   /* Blue header */
+  color: #ffffff;        /* White text in header */
+}
+header h1 {
+  margin: 10px 0;
 }
 .logo {
   max-width: 100px;
+  height: auto;
 }
+
+/* Navigation */
 nav a {
   margin: 0 10px;
-  color: #1e90ff;
+  color: #ffffff;        /* White nav links */
   text-decoration: none;
+  font-weight: bold;
 }
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
-  padding: 50px;
+  padding: 60px 20px;
   text-align: center;
+  background: #f0f8ff;   /* Very light blue for hero background */
+}
+.hero h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+.hero p {
+  font-size: 1.2em;
 }
 .cta-button {
   background: #1e90ff;
-  color: white;
-  padding: 10px 20px;
+  color: #ffffff;
+  padding: 12px 24px;
   text-decoration: none;
+  border-radius: 5px;
   display: inline-block;
   margin-top: 15px;
 }
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #12161d;
+.cta-button:hover {
+  background: #0d6efd;   /* Darker blue hover */
 }
-form input, form textarea {
+
+/* Sections */
+section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+section h2 {
+  color: #1e90ff;
+  margin-bottom: 20px;
+}
+
+/* Forms */
+form input, 
+form textarea {
   width: 100%;
   max-width: 500px;
   margin: 10px auto;
   padding: 10px;
   display: block;
   border-radius: 5px;
-  border: none;
+  border: 1px solid #cccccc;
 }
 form button {
   padding: 10px 20px;
   background: #1e90ff;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
+form button:hover {
+  background: #0d6efd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e90ff;
+  color: #ffffff;
+}
+

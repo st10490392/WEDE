@@ -91,13 +91,20 @@ antagonistic_website/
 
 ---
 
-## 🔗 Example GitHub Commit Messages
-When pushing to GitHub, use descriptive commits such as:
-- `git commit -m "Initial commit: created index.html and base structure"`
-- `git commit -m "Added navigation bar and logo to all pages"`
-- `git commit -m "Styled hero section with blue/white theme"`
-- `git commit -m "Added contact form with Formspree integration"`
-- `git commit -m "Updated README with sitemap and revised budget"`
+## 📜 Changelog
+
+- **Initial Commit** – Setup repo with README and project structure.
+- **Add Base Pages** – Created index, products, signals, jobs, and contact HTML pages.
+- **Add Stylesheet** – Added `style.css` with navy/white/gold scheme.
+- **Add Assets** – Uploaded logo, favicon, and icons.
+- **Homepage Update** – Added hero section, about info, and CTA button.
+- **Jobs Page** – Added application form (Formspree).
+- **Contact Page** – Added contact form and social links.
+- **Signals Page** – Added signals info, Telegram/WhatsApp groups, FAQ.
+- **Products Page** – Placeholder message for future products.
+- **README Update** – Expanded documentation with proposal alignment and references.
+- **Final Fixes** – CSS polish, accessibility labels, consistent footer.
+
 
 ---
 
@@ -106,3 +113,4 @@ When pushing to GitHub, use descriptive commits such as:
 - Pexels. (2025). *Free stock images*. [Online]. Available at: https://www.pexels.com (Accessed: 21 August 2025).
 - Unsplash. (2025). *Royalty-free images*. [Online]. Available at: https://unsplash.com (Accessed: 22 August 2025).
 - W3Schools. (2025). *HTML, CSS & JavaScript Tutorials*. [Online]. Available at: https://www.w3schools.com (Accessed: 23 August 2025).
+

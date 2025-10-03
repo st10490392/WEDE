@@ -73,11 +73,11 @@ antagonistic_website/
 ---
 
 ## 📅 Timeline & Milestones
-- Week 1: Proposal & research completed
-- Week 2: HTML skeleton created
-- Week 3: CSS styling & assets
-- Week 4: Linked pages, forms, navigation
-- Week 5: Final refinements, README, submission
+- Week 1-3: Proposal & research completed
+- Week 4-5: HTML skeleton created
+- Week 6-8: CSS styling & assets
+- Week 8-9: Linked pages, forms, navigation
+- Week 9: Final refinements, README, submission
 
 ---
 
@@ -113,4 +113,5 @@ antagonistic_website/
 - Pexels. (2025). *Free stock images*. [Online]. Available at: https://www.pexels.com (Accessed: 21 August 2025).
 - Unsplash. (2025). *Royalty-free images*. [Online]. Available at: https://unsplash.com (Accessed: 22 August 2025).
 - W3Schools. (2025). *HTML, CSS & JavaScript Tutorials*. [Online]. Available at: https://www.w3schools.com (Accessed: 23 August 2025).
+
 

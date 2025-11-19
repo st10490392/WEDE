@@ -104,6 +104,46 @@ antagonistic_website/
 - **Products Page** – Placeholder message for future products.
 - **README Update** – Expanded documentation with proposal alignment and references.
 - **Final Fixes** – CSS polish, accessibility labels, consistent footer.
+## 🧩 JavaScript Enhancements (Part 3 – Step 4)
+
+For Part 3, I implemented several JavaScript-based enhancements to improve user experience:
+
+### 1. Accordion (FAQ section)
+Implemented a collapsible accordion so users can expand and close questions easily.
+
+### 2. Lightbox Image Viewer
+Added a lightbox gallery for viewing images in a larger, centred modal overlay.
+
+### 3. Smooth Scrolling Animation
+Used JavaScript to animate scroll behaviour between navigation sections.
+
+### 4. Dynamic Content Loading
+Implemented a script that loads content (such as signals or job listings) from a JavaScript array.
+
+### 5. Search Filtering
+Added basic search filtering for content on the signals page using JavaScript DOM manipulation.
+
+These enhancements improve interactivity, accessibility, and overall user experience.
+
+## 🔧 Implementation Explanation
+
+The website was built using HTML, CSS and JavaScript. The structure includes five main pages:
+- index.html
+- jobs.html
+- signals.html
+- products.html
+- contact.html
+
+The navigation bar, footer and colour scheme (blue & white) remain consistent across all pages.
+
+JavaScript was used to add interactivity such as:
+- Accordion on the Signals FAQ section
+- Smooth scrolling
+- Lightbox gallery feature (if added)
+- DOM manipulation for dynamic content (if added)
+
+All forms submit using Formspree. CSS ensures responsiveness across mobile, tablet, and desktop.
+
 
 
 ---
@@ -113,5 +153,6 @@ antagonistic_website/
 - Pexels. (2025). *Free stock images*. [Online]. Available at: https://www.pexels.com (Accessed: 21 August 2025).
 - Unsplash. (2025). *Royalty-free images*. [Online]. Available at: https://unsplash.com (Accessed: 22 August 2025).
 - W3Schools. (2025). *HTML, CSS & JavaScript Tutorials*. [Online]. Available at: https://www.w3schools.com (Accessed: 23 August 2025).
+
 
 

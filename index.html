@@ -11,12 +11,16 @@
   <meta property="og:type" content="website">
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <header>
     <img src="assets/logo.png" alt="The Antagonistic Trader Logo" class="logo" />
     <h1>Antagonistic Trading Co.</h1>
-    <nav>
+    <button id="nav-toggle" class="nav-toggle" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="hamburger" aria-hidden="true"></span>
+    </button>
+    <nav id="main-nav" role="navigation">
       <a href="index.html">Home</a>
       <a href="jobs.html">Jobs</a>
       <a href="signals.html">Signals</a>
@@ -24,7 +28,7 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
-  <main>
+  <main id="main">
     <section class="hero">
       <h2>Smart Money. Real Results.</h2>
       <p>Trading the way the institutions do. Powered by ICT & Fundamentals.</p>
@@ -41,6 +45,45 @@
       <p>
         Connect with us on <strong>Telegram, Instagram, and WhatsApp</strong>!
       </p>
+    </section>
+    <section class="search-gallery">
+      <div class="search">
+        <input type="text" id="search" placeholder="Search...">
+        <div class="search-results">
+          <div class="item">Trader Funding</div>
+          <div class="item">Forex Signals</div>
+          <div class="item">Mentorship</div>
+        </div>
+      </div>
+      <div class="gallery">
+        <img src="assets/logo.png" alt="Gallery image 1">
+        <img src="assets/logo.png" alt="Gallery image 2">
+      </div>
+    </section>
+    <section class="features">
+      <h2>FAQ (Accordion)</h2>
+      <dl class="faq">
+        <dt>What is Antagonistic Trading?</dt>
+        <dd>Our approach is contrarian trading that focuses on institutional flows and reversals.</dd>
+        <dt>Do you provide signals?</dt>
+        <dd>Yes — we provide free forex signals and premium packages.</dd>
+        <dt>How can I join mentorship?</dt>
+        <dd>Contact us via Telegram or the contact page for mentorship opportunities.</dd>
+      </dl>
+
+      <h2>Products (Loaded Dynamically)</h2>
+      <div id="products-list" class="products-list"></div>
+
+      <button id="open-modal" class="open-modal">Open Modal Example</button>
+
+      <!-- Modal (hidden by default) -->
+      <div id="site-modal" class="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+        <div class="modal-content">
+          <button class="modal-close" aria-label="Close modal">×</button>
+          <h3 id="modal-title">Modal Title</h3>
+          <p>This is an example modal. You can place dynamic content here.</p>
+        </div>
+      </div>
     </section>
     <section class="social">
       <a href="https://t.me/GingerRSA" target="_blank" aria-label="Telegram">

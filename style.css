@@ -1,103 +1,146 @@
-/* Reset */
+
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #ffffff;   /* White background */
-  color: #000000;        /* Black text for readability */
-  line-height: 1.6;
+  background: #0c0f14;
+  color: #f0f0f0;
 }
-
-/* Header */
 header {
   padding: 20px;
   text-align: center;
-  background: #1e90ff;   /* Blue header */
-  color: #ffffff;        /* White text in header */
-}
-header h1 {
-  margin: 10px 0;
+  background: #12161d;
 }
 .logo {
   max-width: 100px;
-  height: auto;
 }
-
-/* Navigation */
 nav a {
   margin: 0 10px;
-  color: #ffffff;        /* White nav links */
+  color: #1e90ff;
   text-decoration: none;
-  font-weight: bold;
 }
-nav a:hover {
-  text-decoration: underline;
+/* Header layout for responsiveness */
+header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:14px 20px;
 }
-
-/* Hero Section */
+header h1 { font-size:1.1rem; margin:0; }
+.nav-toggle { display:none; background:transparent; border:none; cursor:pointer; padding:8px; border-radius:6px }
+.nav-toggle .hamburger { display:block; width:22px; height:2px; background:#fff; position:relative }
+.nav-toggle .hamburger::before, .nav-toggle .hamburger::after { content:""; position:absolute; left:0; width:22px; height:2px; background:#fff }
+.nav-toggle .hamburger::before { top:-7px }
+.nav-toggle .hamburger::after { top:7px }
+nav#main-nav { display:flex; align-items:center; gap:10px }
 .hero {
-  padding: 60px 20px;
+  padding: 50px;
   text-align: center;
-  background: #f0f8ff;   /* Very light blue for hero background */
-}
-.hero h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-}
-.hero p {
-  font-size: 1.2em;
 }
 .cta-button {
   background: #1e90ff;
-  color: #ffffff;
-  padding: 12px 24px;
+  color: white;
+  padding: 10px 20px;
   text-decoration: none;
-  border-radius: 5px;
   display: inline-block;
   margin-top: 15px;
 }
-.cta-button:hover {
-  background: #0d6efd;   /* Darker blue hover */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #12161d;
 }
-
-/* Sections */
-section {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: auto;
-}
-section h2 {
-  color: #1e90ff;
-  margin-bottom: 20px;
-}
-
-/* Forms */
-form input, 
-form textarea {
+form input, form textarea {
   width: 100%;
   max-width: 500px;
   margin: 10px auto;
   padding: 10px;
   display: block;
   border-radius: 5px;
-  border: 1px solid #cccccc;
+  border: none;
 }
 form button {
   padding: 10px 20px;
   background: #1e90ff;
-  color: #ffffff;
+  color: white;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
-}
-form button:hover {
-  background: #0d6efd;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #1e90ff;
-  color: #ffffff;
+/* Fade-in on load */
+.fade-in {
+  animation: fadeIn 450ms ease-in-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
+/* Search */
+.search { margin: 20px 0; }
+.search input#search {
+  padding: 10px; border-radius: 6px; border: 1px solid #283038; width: 100%; max-width: 360px; background:#0f1418; color:#fff;
+}
+.search-results { margin-top:10px; }
+.search-results .item { padding:8px 10px; background:#0f1418; border-radius:6px; margin:6px 0; transition:transform .12s ease; cursor:default }
+.search-results .item:hover { transform:translateX(6px); }
+
+/* Gallery */
+.gallery { display:flex; gap:12px; margin-top:12px; }
+.gallery img { max-width:120px; border-radius:8px; cursor:pointer; border:2px solid transparent; transition:transform .18s ease, border-color .18s ease; }
+.gallery img:hover { transform:scale(1.04); border-color:#1e90ff }
+
+/* Lightbox created by script */
+#lightbox { position:fixed; inset:0; background:rgba(0,0,0,0.85); display:flex; align-items:center; justify-content:center; z-index:9999 }
+#lightbox img { max-width:90%; max-height:90%; border-radius:6px }
+
+/* FAQ (accordion) */
+.faq { max-width:800px; margin: 10px 0; }
+.faq dt { background:#0f1418; padding:12px; cursor:pointer; border-radius:6px; margin-top:8px }
+.faq dt.active { background:#172029 }
+.faq dd { margin:0; padding:0 12px; max-height:0; overflow:hidden; transition:max-height .28s ease; background:#071015; border-radius:0 0 6px 6px }
+.faq dd p, .faq dd { padding:12px; color:#cfcfcf }
+
+/* Products list */
+.products-list { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:12px; margin-top:12px }
+.products-list .item { background:#0f1418; padding:12px; border-radius:8px }
+
+/* Modal */
+.modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,0.6); z-index:10000 }
+.modal.open { display:flex }
+.modal .modal-content { background:#0b0f12; padding:20px; border-radius:8px; max-width:720px; width:90%; color:#fff; box-shadow:0 10px 30px rgba(0,0,0,0.6) }
+.modal .modal-close { position:absolute; right:18px; top:12px; background:transparent; border:none; color:#fff; font-size:22px; cursor:pointer }
+
+.open-modal { margin-top:14px; padding:10px 14px; background:#1e90ff; color:white; border:none; border-radius:6px; cursor:pointer }
+
+@media (max-width:600px){
+  .gallery img { max-width:80px }
+}
+
+/* Mobile behaviour */
+@media (max-width:880px){
+  header { align-items:center }
+  .logo { max-width:72px }
+  .nav-toggle { display:inline-flex }
+  nav#main-nav { display:none; position:relative; width:100%; margin-top:8px; flex-direction:column; gap:6px }
+  nav#main-nav.open { display:flex }
+  nav#main-nav a { padding:8px 10px; background:transparent; border-radius:6px }
+  .hero { padding:28px 18px }
+}
+
+@media (max-width:420px){
+  header h1 { font-size:1rem }
+  .search input#search { max-width:100% }
+}
+
+/* Ensure images are fluid */
+img { max-width:100%; height:auto; display:block }
+
+/* Focus styles for accessibility */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid rgba(30,144,255,0.22);
+  outline-offset: 2px;
+}
+
+/* Ensure the modal container can receive focus for screen readers */
+.modal[tabindex] { outline: none }

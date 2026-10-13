@@ -154,5 +154,8 @@ All forms submit using Formspree. CSS ensures responsiveness across mobile, tabl
 - Unsplash. (2025). *Royalty-free images*. [Online]. Available at: https://unsplash.com (Accessed: 22 August 2025).
 - W3Schools. (2025). *HTML, CSS & JavaScript Tutorials*. [Online]. Available at: https://www.w3schools.com (Accessed: 23 August 2025).
 
+---
 
+## Project status update — 13 October 2026
 
+This is an academic website/proposal repository. The current CodePhantom commercial website is maintained separately in [`code-phantom-website`](https://github.com/st10490392/code-phantom-website); this archive is not the production website.
